@@ -31,14 +31,15 @@ a:active {
 #main-wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 3em;
     flex: 0 0 100%;
 }
 
 .main-container {
-    min-width: 35%;
-    max-width: 35%;
-    margin-top: 5%;
+    min-width: 100%;
 }
 
 .smol-text {
@@ -51,8 +52,13 @@ a:active {
     /* border-left: 0px; */
     padding-bottom: 3px;
     padding-top: 4px;
+    margin-left: 2em;
     width: 100%;
     
+}
+
+.links-container {
+    margin-left: 2em;
 }
 
 .main-nametag-text {
@@ -64,30 +70,47 @@ a:active {
     padding-right: 32px;
 }
 
-.desc-text {
-    margin-left: 40px;
-    margin-right: 20px;
-}
-
-
-.container-1 {
-    display: flex;
-    column-count: 2;
-    flex-direction: row;
-}
-
-.dev-current-title {
-    font-size: large;
-    margin-left: 20px;
-    margin-top: 10px;
-    
-}
-
-.dev-list-current {
-    width: 20%;
+.dev-current {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 9999;
     font-size: small;
-    margin-top: 50px;
-    margin-left: -30px;
-    margin-bottom: 20px;
-    width: 40%;
+}
+
+.dev-current-2 {
+    display: flex;
+    width: max-content;
+    padding-right: 2em;
+    animation: scroll-marquee 20s linear infinite;
+    font-size: small;
+}
+
+.dev-list-item {
+    flex-shrink: 0;
+    padding-right: 35px;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: small;
+    text-decoration: none;
+}
+
+.dev-list-item:hover {
+    text-decoration: underline;
+}
+
+.dev-current:hover .dev-current-2 {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(var(--scroll-distance, -50%));
+  }
 }
