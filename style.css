@@ -54,6 +54,9 @@ a:active {
     padding-top: 4px;
     margin-left: 2em;
     width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
     
 }
 
@@ -113,4 +116,25 @@ a:active {
   100% {
     transform: translateX(var(--scroll-distance, -50%));
   }
+}
+
+.nametag-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nametag-top-row {
+    display: flex;
+    align-items: center;
+    gap: .75em;
+}
+
+.nametag-bottom-row {
+    display: inline-flex;
+    align-items: center;
+    gap: .5em;
+    margin-right: -0.2em;
+    margin-left: .4em;
+    margin-top: .25em;
 }

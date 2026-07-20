@@ -45,3 +45,35 @@ window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(scrollMarquee, 150);
 });
+
+async function steamStatus() {
+    const endpoint = 'https://steam-status.kxv41k.dev'; 
+    const dotEl = document.getElementById('steam-status-dot');
+    const textEl = document.getElementById('steam-status-text');
+
+    if (!dotEl || !textEl) return;
+
+    try {
+        const res = await fetch(endpoint);
+        const data = await res.json();
+    
+    if (data.status === "SUCCESS_CONNECTED_TO_STEAM" && data.isPlaying) {
+        dotEl.style.background = '#5361e3';
+        textEl.style.color = '#5361e3';
+        textEl.innerHTML = `PLAYING <strong>${data.game}</strong>`;
+        textEl.style.textTransform = 'uppercase';
+    } else {
+        dotEl.style.background = '#5361e3';
+        dotEl.style.boxShadow = 'none';
+      
+        textEl.style.color = '#5361e3';
+        textEl.textContent = 'OFFLINE';
+    }
+    } catch (error) {
+        console.error("Steam script error:", error);
+        dotEl.style.display = 'none';
+        textEl.style.display = 'none';
+    }
+}
+
+steamStatus();
