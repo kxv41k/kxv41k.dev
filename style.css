@@ -127,17 +127,18 @@ a:active {
     align-items: flex-start;
 }
 
-.nametag-top-row {
+.nametag-bottom-row {
     display: flex;
     align-items: center;
-    gap: .75em;
+    margin-left: -.35em;
+    gap: 1.25em;
 }
 
-.nametag-bottom-row {
+.nametag-top-row {
     display: inline-flex;
     align-items: center;
     gap: .5em;
     margin-right: -0.2em;
-    margin-left: .35em;
+    margin-left: -.05em;
     margin-top: .25em;
 }
