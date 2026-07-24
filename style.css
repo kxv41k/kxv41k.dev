@@ -91,7 +91,7 @@ a:active {
     display: flex;
     width: max-content;
     padding-right: 2em;
-    animation: scroll-marquee 20s linear infinite;
+    animation: scroll-marquee 60s linear infinite;
     font-size: small;
 }
 
