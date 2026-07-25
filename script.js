@@ -1,18 +1,14 @@
 function scrollMarquee() {
     const container = document.getElementById('dev-current-2');
     if (!container) return;
-
     const repos = [
         { text: "📄 kxv41k - README - 7/3/2026", url: "https://github.com/kxv41k/kxv41k" },
         { text: "🔗 kxv41k.dev - Website hosting my portfolio and other info, including projects. - 7/3/2026", url: "https://github.com/kxv41k/kxv41k.dev" },
         { text: "🔗 parallax - Game launcher built for offline gaming without DRM. - 7/24/2026", url: "https://github.com/kxv41k/parallax" },
     ];
-
     container.innerHTML = ''; 
-
     const chain = document.createElement('div');
     chain.style.display = 'flex';
-
     repos.forEach(item => {
         const linkElement = document.createElement('a');
         linkElement.className = 'dev-list-item';
@@ -21,22 +17,16 @@ function scrollMarquee() {
         chain.appendChild(linkElement);
         linkElement.target = "_blank"
     });
-
     container.appendChild(chain);
-
     const totalChainWidth = chain.offsetWidth;
     const viewportWidth = window.innerWidth;
     const repeatCount = Math.ceil(viewportWidth / totalChainWidth) + 1;
-
     for (let i = 0; i < repeatCount; i++) {
         const clone = chain.cloneNode(true);
-    
         clone.setAttribute('aria-hidden', 'true');
         clone.querySelectorAll('a').forEach(link => link.setAttribute('tabindex', '-1'));
-    
         container.appendChild(clone);
     }
-
     container.style.setProperty('--scroll-distance', `-${totalChainWidth}px`);
 }
 
@@ -50,9 +40,7 @@ window.addEventListener('resize', () => {
 async function steamStatus() {
     const endpoint = 'https://steam-status.kxv41k.dev'; 
     const textEl = document.getElementById('steam-status-text');
-
     if (!textEl) return;
-
     try {
         const res = await fetch(endpoint);
         const data = await res.json();
