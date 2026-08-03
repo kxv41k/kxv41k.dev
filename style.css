@@ -10,6 +10,9 @@ body {
     color: #5361e3;
     margin: 0;
     font-size: large;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 li {
@@ -36,6 +39,7 @@ a:active {
     margin-right: 2em;
     margin-top: 3em;
     flex: 0 0 100%;
+    flex: 1;
 }
 
 .main-upper-left {
@@ -44,6 +48,9 @@ a:active {
 
 .main-container {
     min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex;
 }
 
 .smol-text {
@@ -51,8 +58,6 @@ a:active {
 }
 
 .main-nametag {
-    /* border-top: 0px; */
-    /* border-left: 0px; */
     padding-bottom: 3px;
     padding-top: 4px;
     margin-left: 2em;
@@ -60,7 +65,10 @@ a:active {
     display: flex;
     align-items: center;
     gap: 16px;
-    
+}
+
+.main-upper-left {
+    min-width: 60%;
 }
 
 .links-container {
@@ -130,7 +138,6 @@ a:active {
 .nametag-bottom-row {
     display: flex;
     align-items: center;
-    margin-left: -.35em;
     gap: 1.25em;
 }
 
@@ -141,4 +148,82 @@ a:active {
     margin-right: -0.2em;
     margin-left: -.05em;
     margin-top: .25em;
+}
+
+.main-container-lower {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.landing-library-box {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.landing-library-title {
+    font-size: x-large;
+    padding-left: .75em;
+}
+
+.main-upper-right {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+    margin-top: .25em;
+    margin-left: 0em;
+    margin-right: 2em;
+    width: 55%;
+}
+
+.links-container-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 1em;
+    margin-top: .25em;
+}
+
+.nametag-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+    margin-top: 1.25em;
+}
+
+.nametag-top-row-2 {
+    display: inline-flex;
+    align-items: right;
+    justify-content: right;
+    gap: .5em;
+    margin-left: -.05em;
+    margin-top: .25em;
+}
+
+.nametag-bottom-row-2 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 1.25em;
+    margin-top: -.125em;
+}
+
+.footer-box {
+    width: 100%;
+    background-color: #0F1018;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.hover-link {
+    text-decoration: none;
+}
+
+.hover-link:hover {
+    text-decoration: underline;
 }
