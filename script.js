@@ -4,7 +4,6 @@ function scrollMarquee() {
     const repos = [
         { text: "📄 kxv41k - README - 7/3/2026", url: "https://github.com/kxv41k/kxv41k" },
         { text: "🔗 kxv41k.dev - Website hosting my portfolio and other info, including projects. - 7/3/2026", url: "https://github.com/kxv41k/kxv41k.dev" },
-        { text: "🔗 parallax - Game launcher built for offline gaming without DRM. - 7/24/2026", url: "https://github.com/kxv41k/parallax" },
     ];
     container.innerHTML = ''; 
     const chain = document.createElement('div');

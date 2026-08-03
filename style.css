@@ -42,10 +42,6 @@ a:active {
     flex: 1;
 }
 
-.main-upper-left {
-    /* width: 47%; */
-}
-
 .main-container {
     min-width: 100%;
     display: flex;
