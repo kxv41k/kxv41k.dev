@@ -12,7 +12,8 @@ body {
     font-size: large;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
 li {
@@ -38,8 +39,6 @@ a:active {
     margin-left: 2em;
     margin-right: 2em;
     margin-top: 3em;
-    flex: 0 0 100%;
-    flex: 1;
 }
 
 .main-container {
@@ -89,6 +88,7 @@ a:active {
     white-space: nowrap;
     z-index: 9999;
     font-size: small;
+    flex-shrink: 0;
 }
 
 .dev-current-2 {
@@ -142,7 +142,7 @@ a:active {
     align-items: center;
     gap: .5em;
     margin-right: -0.2em;
-    margin-left: -.05em;
+    margin-left: -.3em;
     margin-top: .25em;
 }
 
@@ -179,6 +179,9 @@ a:active {
     justify-content: right;
     gap: 1em;
     margin-top: .25em;
+    border-bottom: 1px solid #5361e3;
+    border-left: 1px solid #5361e3;
+    text-decoration: none;
 }
 
 .nametag-container-2 {
@@ -218,8 +221,46 @@ a:active {
 
 .hover-link {
     text-decoration: none;
+    font-size: small;
 }
 
 .hover-link:hover {
     text-decoration: underline;
+    font-size: small;
+}
+
+.main-container-2 {
+    width: 100%;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+    overflow-y: auto;
+    height: calc(100vh - 11em);
+    border-radius: 2px;
+
+}
+
+.main-stats {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.trophies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: right;
+    justify-content: right;
+    gap: 1em;
+    margin-left: auto;
+}
+
+.default {
+    display: none;
+}
+
+.default.active {
+    display: block;
 }
