@@ -166,6 +166,14 @@ a:active {
     flex-direction: column;
     align-items: right;
     justify-content: right;
+    width: 100%;
+}
+
+.main-upper-right-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
     margin-top: .25em;
     margin-left: 0em;
     margin-right: 2em;
@@ -199,6 +207,16 @@ a:active {
     gap: .5em;
     margin-left: -.05em;
     margin-top: .25em;
+}
+
+.nametag-bottom-row-3 {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 1.25em;
+    margin-top: -1em;
+    margin-bottom: .3em;
+    margin-right: 10.5em;
 }
 
 .nametag-bottom-row-2 {
@@ -235,12 +253,52 @@ a:active {
     margin-right: 2em;
     margin-top: 1em;
     overflow-y: auto;
-    height: calc(100vh - 11em);
+    height: calc(100vh - 16em);
     border-radius: 2px;
 
 }
 
-.main-stats {
+.main-home {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main-reviews {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main-games {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main-films {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main-shows {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main-books {
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
@@ -250,17 +308,33 @@ a:active {
 
 .trophies-2 {
     flex-direction: column;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     align-items: flex-end;
     gap: .2em;
     margin-left: auto;
     padding-left: .5em;
     padding-bottom: .5em;
+    flex-shrink: 0;
+}
+
+.trophies-3 {
+    flex-direction: column;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: .2em;
+    margin-left: auto;
+    padding-left: .5em;
+    padding-bottom: .1em;
+    border-bottom: 1px solid #5361e3;
+    border-left: 1px solid #5361e3;
+    flex-shrink: 0;
+    height: fit-content;
 }
 
 .trophies {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: flex-end;
@@ -268,6 +342,20 @@ a:active {
     margin-left: auto;
     margin-bottom: 0;
     margin-top: 0;
+    flex-shrink: 0;
+}
+
+.trophies-4 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .6em;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    flex-shrink: 0;
+    height: fit-content;
 }
 
 .default {
@@ -276,4 +364,20 @@ a:active {
 
 .default.active {
     display: block;
+}
+
+.reviews-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: fit-content;
+}
+
+.reviews5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: fit-content;
 }
