@@ -2,6 +2,7 @@ function scrollMarquee() {
     const container = document.getElementById('dev-current-2');
     if (!container) return;
     const repos = [
+        // latest 10 blog posts
         { text: "📄 kxv41k - README - 7/3/2026", url: "https://github.com/kxv41k/kxv41k" },
         { text: "🔗 kxv41k.dev - Website hosting my portfolio and other info, including projects. - 7/3/2026", url: "https://github.com/kxv41k/kxv41k.dev" },
     ];

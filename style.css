@@ -68,6 +68,10 @@ a:active {
 
 .links-container {
     margin-left: 2em;
+    display: inline-flex;
+    gap: .65em;
+    padding-bottom: .1em;
+    padding-right: .5em;
 }
 
 .main-nametag-text {
@@ -109,7 +113,8 @@ a:active {
 }
 
 .dev-list-item:hover {
-    text-decoration: underline;
+    color: #9ca6ff;
+    font-size: small;
 }
 
 .dev-current:hover .dev-current-2 {
@@ -181,7 +186,7 @@ a:active {
 }
 
 .links-container-2 {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
     justify-content: right;
@@ -243,7 +248,7 @@ a:active {
 }
 
 .hover-link:hover {
-    text-decoration: underline;
+    color: #9ca6ff;
     font-size: small;
 }
 
@@ -253,9 +258,14 @@ a:active {
     margin-right: 2em;
     margin-top: 1em;
     overflow-y: auto;
-    height: calc(100vh - 16em);
+    height: calc(100vh - 13.5em);
     border-radius: 2px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
+.main-container-2::-webkit-scrollbar {
+    display: none;
 }
 
 .main-home {
@@ -333,6 +343,13 @@ a:active {
     height: fit-content;
 }
 
+.lc-2 {
+    gap: .65em;
+    display: inline-flex;
+    margin-bottom: .1em;
+    padding-bottom: .15em;
+}
+
 .trophies {
     display: inline-flex;
     flex-wrap: wrap;
@@ -355,6 +372,7 @@ a:active {
     margin-bottom: 0;
     margin-top: 0;
     flex-shrink: 0;
+    padding-bottom: .1em;
     height: fit-content;
 }
 
@@ -380,4 +398,94 @@ a:active {
     align-items: flex-start;
     justify-content: flex-start;
     height: fit-content;
+}
+
+.review-border {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #5361e3;
+    border-bottom: 1px solid #5361e3;
+    padding-left: .5em;
+    padding-bottom: .1em;
+    margin-bottom: 1.5em;
+    margin-top: .25em;
+}
+
+.links-button {
+    color: #5361e3;
+    font-size: 10.5px;
+    margin-right: .25em;
+}
+
+.links-button:hover {
+    color: #9ca6ff;
+    font-size: 10.5px;
+}
+
+.review-button {
+    color: #5361e3;
+    font-size: 10.5px;
+    margin-right: -.25em;
+}
+
+.review-button:hover {
+    color: #9ca6ff;
+    font-size: 10.5px;
+}
+
+.log-button {
+    color: #5361e3;
+    font-size: 10.5px;
+    margin-right: -.25em;
+}
+
+.log-button:hover {
+    color: #9ca6ff;
+    font-size: 10.5px;
+}
+
+.stats-button {
+    color: #5361e3;
+    font-size: 10.5px;
+    margin-right: -.25em;
+}
+
+.stats-button:hover {
+    color: #9ca6ff;
+    font-size: 10.5px;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    color: #5361e3;
+    font-size: 10.5px;
+    background-color: #242350;
+    border-radius: 4px;
+    padding-left: .35em;
+    padding-right: .35em;
+    height: 1.65em;
+    margin-right: -.3em;
+}
+
+.tag-text{
+    font-size: 12.5px;
+    margin-left: .25em;
+    margin-bottom: .05em;
+}
+
+.reviews-box li {
+    display: inline-flex;
+    gap: .5em;
+    align-items: center;
+    margin-bottom: .35em;
+}
+
+.smol-text-2 {
+    font-size: small;
+    pointer-events: none;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
