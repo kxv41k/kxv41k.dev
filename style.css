@@ -455,6 +455,12 @@ a:active {
     font-size: 10.5px;
 }
 
+.trophy-award {
+    color: #cdd2ff;
+    font-size: 10.5px;
+    margin-right: .35em;
+}
+
 .tag {
     display: inline-flex;
     align-items: center;
