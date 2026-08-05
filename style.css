@@ -423,7 +423,7 @@ a:active {
 }
 
 .review-button {
-    color: #5361e3;
+    color: #FA9EBC;
     font-size: 10.5px;
     margin-right: -.25em;
 }
@@ -494,4 +494,26 @@ a:active {
     align-items: center;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
+}
+
+.smol-text-3 {
+    font-size: small;
+    display: inline-flex;
+    align-items: center;
+    width: 25em;
+    gap: .8em;
+}
+
+.smol-text-4 {
+    display: inline-flex;
+    align-items: center;
+    width: 4em;
+    gap: .5em;
+}
+
+.smol-text-5 {
+    display: inline-flex;
+    align-items: center;
+    margin-left: .2em;
+    gap: .5em;
 }
