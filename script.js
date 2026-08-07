@@ -45,7 +45,7 @@ async function steamStatus() {
         const res = await fetch(endpoint);
         const data = await res.json();
     
-    if (data.status === "SUCCESS_CONNECTED_TO_STEAM" && data.isPlaying) {
+    if (data.status === "SUCCESS_CONNECTED_TO_STEAM" && data.playing) {
         textEl.style.color = '#5361e3';
         textEl.innerHTML = `PLAYING <strong>${data.game}</strong>`;
         textEl.style.textTransform = 'uppercase';
