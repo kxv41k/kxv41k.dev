@@ -518,7 +518,7 @@ a:active {
 .smol-text-4 {
     display: inline-flex;
     align-items: center;
-    width: 4.5em;
+    width: 4em;
     gap: .5em;
 }
 
